@@ -10,6 +10,7 @@ class AuthController {
 
   void setUser(BuildContext context, UserModel? user) {
     if (user != null) {
+      saveUser(user);
       _user = user;
       // Redirecionar usuário para Home page
       Navigator.pushReplacementNamed(context, "/home");
