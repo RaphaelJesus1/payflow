@@ -13,7 +13,7 @@ class AuthController {
       saveUser(user);
       _user = user;
       // Redirecionar usuário para Home page
-      Navigator.pushReplacementNamed(context, "/home");
+      Navigator.pushReplacementNamed(context, "/home", arguments: user);
     } else {
       // Redirecionar usuário para Login page
       Navigator.pushReplacementNamed(context, "/login");
